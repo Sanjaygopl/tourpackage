@@ -1,0 +1,19 @@
+
+{% load static %}
+<html>
+<body>
+<h1>Edit Item</h1>
+<form method="POST"  class="POST-form" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{form.as_p}}
+    <button type="submit">update</button>
+</form>
+</body>
+<style>
+    body{
+      background-image: url("{% static 'img/sky.jpg' %}");
+    h3{
+    font-color:white;
+    }
+</style>
+</html>

@@ -1,0 +1,169 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'package' %}">Package</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'about' %}">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'contact' %}">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'register' %}">Register</a>
+                </li>
+
+
+                <h3><b><i>Travel Round</i></b> <sub><i>"create own way"</i></sub></h3>   <img src="{% static 'img/logo.jpg'%}"width="80",height="80">
+
+                <li class="nav-item">
+                </li>
+            </ul>
+        </div>
+    </div>
+<!-- Bootstrap JS -->
+    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+        <a href="{% url 'vendorlog' %}"><button>Login as vendor</button></a>
+        <a href="{% url 'userlog' %}"><button>Login as user</button></a>
+
+
+    </div>
+
+</nav>
+<br>
+
+
+
+<h2><center><b><i><mark>Fly With Your Dreams</mark></i></b></center></h2>
+<br>
+<h4 style="margin-left: 200px;"><b>Explore the wonders of the world,from iconic landmarks to hidden gems,and let us turn your<center>travel in to cherished memories...</center></b></h4>
+<br>
+
+
+
+
+<p><center><mark>Tourism is a vital part of India’s economy and culture, attracting millions of visitors each year due to its varied landscapes, rich history, and vibrant culture. India’s natural beauty, from the towering Himalayas in the north to the tranquil beaches in the south, offers a diverse range of experiences for tourists. Iconic landmarks like the Taj Mahal, Red Fort, and Qutub Minar are central to India’s tourism appeal. The Taj Mahal, one of the Seven Wonders of the World, stands as a symbol of eternal love and architectural brilliance. Similarly, the Red Fort and Qutub Minar provide glimpses into India’s historical and architectural achievements.</mark></center></mark></p>
+<br>
+
+
+
+
+
+
+<p> <b><center>Explore our exclusive packages...! </center></b></p>
+<center>
+<a href="{% url 'package' %}"><button>Explore packages</button></a>
+</center><br>
+
+
+<h4><center><i><b><mark>Our services</mark></b></i></center></h4>
+<div class="row row-cols-1 row-cols-md-5 g-5">
+    <div class="col">
+        <div class="card">
+            <img src="{% static 'img/exclusive.jpeg' %}" class="card-img-top" alt="exclusive.jpeg">
+            <div class="card-body">
+                <h7 class="card-title"><center>Exclusive Tour</center></h7>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card">
+            <img src="{% static 'img/adventure.jpeg' %}" class="card-img-top" alt="adventure.jpeg">
+            <div class="card-body">
+                <h7 class="card-title"><center>Adventure tours</center></h7>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card">
+            <img src="{% static 'img/beach.jpeg' %}" class="card-img-top" alt="beach.jpeg">
+            <div class="card-body">
+                <h7 class="card-title"><center>Beach holidays</center></h7>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card">
+            <img src="{% static 'img/cultural.jpeg' %}" class="card-img-top" alt="cultural.jpeg">
+            <div class="card-body">
+                <h7 class="card-title"><center>Cultural trips</center></h7>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row row-cols-1 row-cols-md-5 g-5">
+    <div class="col">
+        <div class="card">
+            <img src="{% static 'img/affordable.jpeg' %}" class="card-img-top" alt="affordable.jpeg">
+            <div class="card-body">
+                <h7 class="card-title"><center>Affordable packages</center></h7>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="col">
+        <div class="card">
+            <img src="{% static 'img/abc.jpeg' %}" class="card-img-top" alt="abc.jpeg">
+            <div class="card-body">
+                <h7 class="card-title"><center>24/7 support</center></h7>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <style>
+
+        body {
+          background-image: url("{% static 'img/naturee.jpg' %}");
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+      background-size: 100% 100%;
+        }
+        h2,p,h4{
+        color:white;
+        }
+       button{
+        background-color:yellow;
+        text-align:center;
+        border-radius: 8px;
+
+        }
+
+
+    </style>
+
+</div>
+<nav class="navbar" style="background-color: #e3f2fd;">
+    <!-- Navbar content -->
+    <p><center>@ 2024 Tour Packages Management.All Right Reserved </center></p>
+
+
+</nav>
+</body>
+</html>

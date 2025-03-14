@@ -1,0 +1,22 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>payment page</title>
+</head>
+<body>
+<h2><b><center>WELCOME TO THE PAYMENT PAGE</center></b></h2>
+<h3>PAYMENT GATEWAY USED IS RAZORPAY</h3>
+<form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_PUOLl82kSyipxF" async> </script> </form>
+</body>
+<a href="{% url 'home' %}">back to home</a>
+
+<style>
+    body{
+      background-image: url("{% static 'img/sky.jpg' %}");
+      }
+
+
+
+</style>
+</html>
